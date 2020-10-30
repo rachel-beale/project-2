@@ -1,0 +1,67 @@
+#hero {
+  background-image: linear-gradient(rgba(5, 3, 3, 0.76), rgba(138, 100, 100, 0.452)),url('/images/audience.jpg');
+  background-size: cover;
+  }
+
+#movie{
+  background-image: linear-gradient(rgba(5, 3, 3, 0.76), rgba(138, 100, 100, 0.452)),url('/images/audience.jpg');
+  background-size: cover;
+  min-height: 100vh;
+
+}
+
+#movie-container{
+padding-top:100px;
+padding-bottom:20px;
+}
+
+#h1{
+  font-size:55px;
+  padding:10px;
+}
+
+#search {
+  background-image: linear-gradient(rgba(5, 3, 3, 0.685), rgba(90, 95, 95, 0.452)), url('/images/audience.jpg');
+ background-size: cover;
+ min-height:100vh;
+}
+.title{
+  color:white;
+  font-size: 35px;
+}
+
+.control,.field{
+  color:white;
+  font-size:25px;
+ }
+ 
+#inputYear{
+  max-width:8%;
+  // padding: 15px;
+  // margin-top: 20px;
+}
+
+.radio:hover{
+color: rgb(228, 115, 115);
+}
+.searchi,.is-dark{
+  padding:25px;
+  max-width: 100%;
+
+}
+
+.pager{
+ padding: 25px;
+ background-color: rgba(134, 133, 131, 0.945);
+}
+
+
+.is-small{
+  padding: 20px;
+}
+
+.our{
+text-align: center;
+border: 2px solid white;
+background-color:rgba(177, 173, 165, 0.945);
+}

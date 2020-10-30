@@ -28,8 +28,12 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "build": "^0.1.4",
+    "bulma": "^0.9.1",
+    "bulma-pagination-react": "^0.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "stars-rating": "^1.1.0"
   }
 }
