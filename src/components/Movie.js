@@ -9,7 +9,7 @@ const Movie = (props) => {
   { console.log(movieId) }
 
   useEffect(() => {
-    axios.get(`http://www.omdbapi.com/?apikey=a48a3d11&i=${movieId}`)
+    axios.get(`https://www.omdbapi.com/?apikey=a48a3d11&i=${movieId}`)
       .then(resp => {
         updateMovie(resp.data)
       })
@@ -47,59 +47,6 @@ const Movie = (props) => {
         </div>
       </div>
     </div>
-
-
-    {/* 
-    <div className="columns px-6 is-multiline is-centered is-mobile">
-
-      <div className="column if-half is-half-tablet is-half-mobile">
-        <div className="card">
-          <div className="card-image">
-            <figure className="image is-4by5">
-              <img src={movie.Poster} alt={movie.Title} className="image" />
-            </figure>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-content">
-            <div className="media">
-              <div className="media-content">
-                <h1 className="title has-text-black is-4">{movie.Title}</h1>
-                <p>IMDB Rating</p>
-                <div id="stars"></div>
-                <StarRating half={true} edit={false} value={movie.imdbRating} count={10} size={24} color2={'#ffd700'} />
-                <p>Plot:</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
-
-    {/* <div className="flex-container">
-      <div className="other-container">
-        <h1 className="title has-text-black">{movie.Title}</h1>
-        <figure>
-          <img src={movie.Poster} alt={movie.Title} className="image" />
-        </figure>
-        <p>IMDB Rating</p>
-        <div id="stars"></div>
-        <StarRating half={true} edit={false} value={movie.imdbRating} count={10} size={24} color2={'#ffd700'} />
-        <p>Plot:</p>
-        <h2 className="subtitle">{movie.Plot}</h2>
-        <p >More Info</p>
-        <p>Director: {movie.Director}  </p>
-        <p>Runtime: {movie.Runtime}</p>
-        <p>Movie awards: {movie.Awards}</p>
-        <p>{movie.Language}</p>
-        <p>Actors: {movie.Actors}</p>
-        
-
-      </div>
-    </div> */}
-
   </section>
 }
 

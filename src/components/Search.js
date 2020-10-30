@@ -33,7 +33,7 @@ const Search = () => {
   // Function being called depending on the search filter used. 
   // 1000 daily limit on the API
   const searchFunction = (searched, category, year, page) => {
-    const plainUrl = `http://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${searched}&page=${page}`
+    const plainUrl = `https://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${searched}&page=${page}`
     const urlCategory = `${plainUrl}&type=${category}`
     const urlYear = `${plainUrl}&y=${year}`
     const urlLong = `${urlCategory}&y=${year}`
