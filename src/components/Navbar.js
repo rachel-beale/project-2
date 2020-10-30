@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import navPhoto from '../images/film.png'
 
 const Navbar = () => {
   return <nav className="navbar is-light" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
-      <img src="/images/film.png" width="70px" height="28px"></img>
+      <img src = {navPhoto} width="70px" height="28px"></img>
     </div>
     <div className="navbar-menu is-active">
       <div className="navbar-end">

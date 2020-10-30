@@ -31,7 +31,7 @@ const Movie = (props) => {
               <h1 className="is-family-code title has-text-centered has-text-black">{movie.Title}</h1>
               <p className="is-family-code is-size-4 has-text-weight-bold">IMDB Rating</p>
               <div id="stars"></div>
-              <StarRating half={true} edit={false} value={movie.imdbRating} count={10} size={24} color2={'#ffd700'} />
+              <StarRating half={true} edit={false} value={parseInt(movie.imdbRating)} count={10} size={24} color2={'#ffd700'} />
               <p className="is-family-code is-size-4 has-text-weight-bold">Plot:</p>
               <p className="is-family-code is-size-5">{movie.Plot}</p>
             </div>

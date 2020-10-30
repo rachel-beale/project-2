@@ -1,10 +1,10 @@
 #hero {
-  background-image: linear-gradient(rgba(5, 3, 3, 0.76), rgba(138, 100, 100, 0.452)),url('/images/audience.jpg');
+  background-image: linear-gradient(rgba(5, 3, 3, 0.76), rgba(138, 100, 100, 0.452)),url('../images/audience.jpg');
   background-size: cover;
   }
 
 #movie{
-  background-image: linear-gradient(rgba(5, 3, 3, 0.76), rgba(138, 100, 100, 0.452)),url('/images/audience.jpg');
+  background-image: linear-gradient(rgba(5, 3, 3, 0.76), rgba(138, 100, 100, 0.452)),url('../images/audience.jpg');
   background-size: cover;
   min-height: 100vh;
 
@@ -21,7 +21,7 @@ padding-bottom:20px;
 }
 
 #search {
-  background-image: linear-gradient(rgba(5, 3, 3, 0.685), rgba(90, 95, 95, 0.452)), url('/images/audience.jpg');
+  background-image: linear-gradient(rgba(5, 3, 3, 0.685), rgba(90, 95, 95, 0.452)), url('../images/audience.jpg');
  background-size: cover;
  min-height:100vh;
 }
