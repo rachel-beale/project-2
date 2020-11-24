@@ -32,22 +32,23 @@ const Search = () => {
 
   // Function being called depending on the search filter used. 
   // 1000 daily limit on the API
+  
   const searchFunction = (searched, category, year, page) => {
     const plainUrl = `https://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${searched}&page=${page}`
-    const urlCategory = `${plainUrl}&type=${category}`
-    const urlYear = `${plainUrl}&y=${year}`
-    const urlLong = `${urlCategory}&y=${year}`
-    let url = ''
+    // const urlCategory = `${plainUrl}&type=${category}`
+    // const urlYear = `${plainUrl}&y=${year}`
+    // const urlLong = `${urlCategory}&y=${year}`
+    // let url = ''
 
-    if (year && !category) {
-      url = urlYear
-    } else if (category && !year) {
-      url = urlCategory
-    } else if (year && category) {
-      url = urlLong
-    } else {
-      url = plainUrl
-    }
+    // if (year && !category) {
+    //   url = urlYear
+    // } else if (category && !year) {
+    //   url = urlCategory
+    // } else if (year && category) {¢
+    //   url = urlLong
+    // } else {
+    //   url = plainUrl
+    // }
     if (searched) {
       axios.get(url)
         .then(resp => {
@@ -75,6 +76,7 @@ const Search = () => {
           <div className="columns">
             <div className="field has-addons column">
               <div className="control">
+
                 <input className="input is-family-code searchi"
                   placeholder="Search"
                   onChange={(event) => updateSearch(event.target.value)}
@@ -87,6 +89,7 @@ const Search = () => {
                   }}>
                   Search
                 </button>
+                
               </div>
             </div>
           </div>
