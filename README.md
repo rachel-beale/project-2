@@ -2,7 +2,12 @@
 
 # Movie Search 🎬 
 
+Moved - A Movie and TV searching App 
+
+Check it out here - https://rachel-beale.github.io/project-2/ 
+
 ## Overview
+
 For my second General Assembly project we paired up  for a 48 hour hackathon to create a multi-page app using an external API of our choosing. 
 
 ## Brief 
