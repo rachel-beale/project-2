@@ -32,23 +32,24 @@ const Search = () => {
 
   // Function being called depending on the search filter used. 
   // 1000 daily limit on the API
-  
+
   const searchFunction = (searched, category, year, page) => {
     const plainUrl = `https://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${searched}&page=${page}`
-    // const urlCategory = `${plainUrl}&type=${category}`
-    // const urlYear = `${plainUrl}&y=${year}`
-    // const urlLong = `${urlCategory}&y=${year}`
-    // let url = ''
+    const urlCategory = `${plainUrl}&type=${category}`
+    const urlYear = `${plainUrl}&y=${year}`
+    const urlLong = `${urlCategory}&y=${year}`
+    let url = ''
 
-    // if (year && !category) {
-    //   url = urlYear
-    // } else if (category && !year) {
-    //   url = urlCategory
-    // } else if (year && category) {¢
-    //   url = urlLong
-    // } else {
-    //   url = plainUrl
-    // }
+    if (year && !category) {
+      url = urlYear
+    } else if (category && !year) {
+      url = urlCategory
+    } else if (year && category) {
+    ¢
+      url = urlLong
+    } else {
+      url = plainUrl
+    }
     if (searched) {
       axios.get(url)
         .then(resp => {
@@ -89,7 +90,7 @@ const Search = () => {
                   }}>
                   Search
                 </button>
-                
+
               </div>
             </div>
           </div>
@@ -120,7 +121,7 @@ const Search = () => {
           onChange={(event) => updateYear(event.target.value)}
           value={year}
         />
-        </div>
+      </div>
     </div>
 
     {/* Mapping of the API to display searched for results, link used to take take user to further info of selected item */}
